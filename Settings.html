@@ -1,0 +1,19 @@
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://gliederung.dlrg.de/php/jquery.countdown.js"></script>
+
+<script type="text/javascript">
+/* Hier Datum ändern Jahr/Monat/Tag Uhrzeit in Stunde:Minute:Sekunde */
+$('#clock').countdown('2017/11/18 12:30:00').on('update.countdown', function(event) {
+  var $this = $(this)
+    if (event.elapsed) {
+    $this.html(event.strftime('Die Veranstaltung findet heute statt.'));
+  } else {
+    $this.html(event.strftime(''
+    + 'In '
+    + '<span>%-w</span> %!w:Woche,Wochen;, '
+    + '<span>%-d</span> %!d:Tag,Tagen; und '
+    + '<span>%-H</span> %!H:Stunde,Stunden; '
+    + 'findet die Veranstaltung statt.'));
+  }
+});
+ </script>
