@@ -9,7 +9,7 @@ Wenn ihr euch verbunden habt konnt ihr die `jquery.countdown.js` oder `jquery.co
 
 Um den Countdown nutzen zu können muss auf der gewünschten Seite **zwei** neue Seiteninhalte "reines HTML" angelegt werden.
 
-In den ersten Seiteninhalt wird der Code aus der `Output.html eingefügt.
+In den ersten Seiteninhalt wird der Code aus der `Output.html` eingefügt.
 
 **Bitte den Pfad zu `jquery.countdown.js` oder `jquery.countdown.min.js` anpassen.
 Der Ordner `public_html` wird über https://gliederung.dlrg.de/php/ aufgerufen.**
